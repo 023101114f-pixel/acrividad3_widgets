@@ -6,18 +6,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // 🔹 Scaffold (estructura base)
+      //  Scaffold (estructura base)
       appBar: AppBar(
         title: const Text("Galería de Plantas 🌿"),
         centerTitle: true,
       ),
       body: ListView(
-        // 🔹 ListView (permite scroll vertical)
+        //  ListView (permite scroll vertical)
         padding: const EdgeInsets.all(16),
         children: [
-          // ===============================
-          // 🔵 EJEMPLO 1: COLUMN
-          // ===============================
+          //  EJEMPLO 1: COLUMN
           const Text(
             "Ejemplo Column (Vertical)",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -25,7 +23,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 10),
 
           Column(
-            // 🔹 Column (organiza verticalmente)
+            // Column (organiza verticalmente)
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.network(
@@ -47,9 +45,7 @@ class HomeScreen extends StatelessWidget {
 
           const SizedBox(height: 40),
 
-          // ===============================
-          // 🟢 EJEMPLO 2: ROW
-          // ===============================
+          //  EJEMPLO 2: ROW
           const Text(
             "Ejemplo Row (Horizontal)",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -57,7 +53,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 10),
 
           Row(
-            // 🔹 Row (organiza horizontalmente)
+            //  Row (organiza horizontalmente)
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.network("https://picsum.photos/100/100?random=4"),
@@ -68,9 +64,7 @@ class HomeScreen extends StatelessWidget {
 
           const SizedBox(height: 40),
 
-          // ===============================
-          // 🟡 EJEMPLO 3: EXPANDED
-          // ===============================
+          //  EJEMPLO 3: EXPANDED
           const Text(
             "Ejemplo Expanded",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -78,10 +72,10 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 10),
 
           Row(
-            // 🔹 Row
+            //  Row
             children: [
               Expanded(
-                // 🔹 Expanded (ocupa espacio disponible)
+                //  Expanded (ocupa espacio disponible)
                 child: Image.network(
                   "https://picsum.photos/200/150?random=7",
                   height: 120,
@@ -90,7 +84,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               Expanded(
-                // 🔹 Expanded
+                //  Expanded
                 child: Image.network(
                   "https://picsum.photos/200/150?random=8",
                   height: 120,
@@ -102,9 +96,7 @@ class HomeScreen extends StatelessWidget {
 
           const SizedBox(height: 40),
 
-          // ===============================
-          // 🟣 EJEMPLO 4: STACK
-          // ===============================
+          // EJEMPLO 4: STACK
           const Text(
             "Ejemplo Stack (Superposición)",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -113,7 +105,7 @@ class HomeScreen extends StatelessWidget {
 
           Center(
             child: Stack(
-              // 🔹 Stack (superpone widgets)
+              //  Stack (superpone widgets)
               alignment: Alignment.center,
               children: [
                 Image.network(
